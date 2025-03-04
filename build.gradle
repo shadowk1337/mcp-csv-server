@@ -35,6 +35,10 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// CSV file processing
+	implementation 'org.apache.commons:commons-csv:1.9.0'
+	// Excel file processing (for both .xls and .xlsx)
+	implementation 'org.apache.poi:poi-ooxml:5.2.3'
 }
 
 dependencyManagement {
