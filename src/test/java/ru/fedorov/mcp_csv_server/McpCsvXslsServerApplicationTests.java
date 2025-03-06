@@ -1,10 +1,10 @@
-package com.example.demo;
+package ru.fedorov.mcp_csv_server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class McpCsvXslsServerApplicationTests {
 
 	@Test
 	void contextLoads() {
