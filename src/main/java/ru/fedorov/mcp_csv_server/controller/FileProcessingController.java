@@ -1,3 +1,5 @@
+package ru.fedorov.mcp_csv_server.controller;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +23,7 @@ public class FileProcessingController {
     @Autowired
     public FileProcessingController(WebClient.Builder webClientBuilder) {
         // Base URL for the LLM service (Ollama in this case)
-        this.webClient = webClientBuilder.baseUrl("http:/ /31.192.111.23:11434").build();
+        this.webClient = webClientBuilder.baseUrl("http://31.192.111.23:11434").build();
     }
 
     @PostMapping(value = "/process-file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
